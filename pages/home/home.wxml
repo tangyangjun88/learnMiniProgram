@@ -2,3 +2,6 @@
 <!--<text>pages/home/home.wxml</text>-->
 <view style="color:red; font-size:30px;" >Hello World</view>
 <button size="mini">按钮</button>
+
+<view>知识点1</view>
+<view>这个第一个知识点</view>
