@@ -2,5 +2,26 @@
   "pages": [
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#deee00",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "宝宝乐园",
+    "backgroundColor": "#fffeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "assets/tabBar/home.png",
+      "selectedIconPath": "assets/tabBar/select_home.png"
+    },{
+      "pagePath": "pages/about/about",
+      "text": "关于",
+      "iconPath": "assets/tabBar/about.png",
+      "selectedIconPath": "assets/tabBar/select_about.png"
+    }]
+  }
 }
