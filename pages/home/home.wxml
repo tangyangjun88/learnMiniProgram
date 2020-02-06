@@ -2,3 +2,7 @@
 <!--<text>pages/home/home.wxml</text>-->
 <view style="color:red; font-size:30px;" >Hello World</view>
 <button size="mini">按钮</button>
+
+
+<view>知识点2</view>
+<view>这是知识点2</view>
