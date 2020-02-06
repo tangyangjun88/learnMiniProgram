@@ -2,3 +2,12 @@
 <!--<text>pages/home/home.wxml</text>-->
 <view style="color:red; font-size:30px;" >Hello World</view>
 <button size="mini">按钮</button>
+
+<!--数据动态绑定-->
+<view>{{msg}}</view>
+<!--列表显示-->
+<view wx:for="{{stuentds}}">{{item.name}}-{{item.age}}-{{item.sex}}</view>
+<!--事件监听-->
+<view>{{count}}</view>
+<button size="mini" bindtap="addCount">+</button>
+<button size="mini" bindtap="subCount">-</button>

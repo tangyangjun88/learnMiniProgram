@@ -5,9 +5,40 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    msg:"动态数据",
+    count:0,
+    stuentds:[
+      {
+        name: "张三",
+        age: 18,
+        sex: '男'
+      },
+      {
+        name: "李四",
+        age: 28,
+        sex: '女'
+      },
+      {
+        name: "王五",
+        age: 38,
+        sex: '男'
+      }
+    ]
   },
-
+  addCount(){
+   // this.data.count+=1
+    //console.log(this.data.count)
+    this.setData({
+      count: this.data.count+=1
+    })
+  },
+  subCount(){
+    // this.data.count+=1
+     //console.log(this.data.count)
+     this.setData({
+       count: this.data.count-=1
+     })
+   },
   /**
    * 生命周期函数--监听页面加载
    */
