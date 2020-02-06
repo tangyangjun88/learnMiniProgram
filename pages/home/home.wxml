@@ -7,7 +7,7 @@
 <view>{{msg}}</view>
 <!--列表显示-->
 <view wx:for="{{stuentds}}">{{item.name}}-{{item.age}}-{{item.sex}}</view>
-<!--事件监听-->
+<!--事件监听 -->
 <view>{{count}}</view>
 <button size="mini" bindtap="addCount">+</button>
 <button size="mini" bindtap="subCount">-</button>
