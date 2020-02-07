@@ -1,0 +1,9 @@
+<!--pages/button/button.wxml-->
+<button>按钮</button>
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<button size="mini" disabled >按钮</button>
+<button size="mini" loading>按钮</button>
+<button size="mini" open-type="getPhoneNumber" bindgetphonenumber="onGetPhoneNumber">获取电话</button>
+
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">获取用户</button>

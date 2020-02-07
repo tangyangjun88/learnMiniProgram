@@ -1,0 +1,7 @@
+<!--pages/text/text.wxml-->
+<text selectable >hello world\n</text>
+<text space="ensp">我时 text组件\n</text>
+<text space="emsp">我时 text组件\n</text>
+<text space="nbsp">我时 text组件\n</text>
+
+<text decode >5 &gt; 4</text>
