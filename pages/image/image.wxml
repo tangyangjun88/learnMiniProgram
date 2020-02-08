@@ -1,0 +1,18 @@
+
+<text>本地地址\n</text>
+<image src="../../assets/test/cat.jpg"/>
+
+<text>\n网络地址\n</text>
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+
+<button bindtap="selImage">选择图片</button>
+<image src="{{imagePath}}"/>
+<!--图片加载后调用：bindload,和图片懒加载：lazy-load-->
+<image wx:for="{{1}}"
+        lazy-load
+      bindload="imageLoad"
+      src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>
+<!--show-menu-by-longpress：开启长按图片显示识别小程序码菜单-->
+<image mode="aspectFill"
+      show-menu-by-longpress
+      src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"/>

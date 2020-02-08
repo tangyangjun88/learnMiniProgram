@@ -1,0 +1,9 @@
+<!--横向滚动-->
+<scroll-view class="scroll1" scroll-x >
+  <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+
+<!--纵向滚动-->
+<scroll-view class="scroll2" bindscroll="onScroll" scroll-y>
+  <view wx:for="{{10}}" class="item2">{{item}}</view>
+</scroll-view>

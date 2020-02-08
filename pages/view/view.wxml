@@ -1,0 +1,9 @@
+<!--pages/view/view.wxml-->
+
+<view>这是个view组件</view>
+<view class="view-box1" hover-class="hover-box1" hover-stay-time="3000">box1</view>
+
+<view class="view-box2" hover-class="hover-box2">
+  <view class="view-box1" hover-class="hover-box1" hover-stay-time="300"
+  hover-stop-propagation >box1</view>
+</view>

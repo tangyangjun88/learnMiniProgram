@@ -1,0 +1,14 @@
+
+<!--1.基本使用-->
+<input />
+<!--2.value 默认值-->
+<input value="默认值"/>
+<input type="number"/>
+<input password ></input>
+<input placeholder="请输入内容"></input>
+
+<input 
+      bindinput="onInput"
+      bindfocus="onFoucus"
+      bindblur="onBlur"
+      ></input>
