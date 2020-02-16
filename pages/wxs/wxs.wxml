@@ -1,0 +1,20 @@
+
+<!--wxs 第一中写法-->
+<!-- <wxs module="info">
+  var message = "hello world";
+  var sum = function(num1,num2){
+    return num1+num2;
+  }
+  module.exports={
+    message:message,
+    sum:sum
+  } 
+</wxs>-->
+<wxs src="../../wxs/info.wxs" module="info"/>
+
+<view>{{info.message}}</view>
+<view>{{25.66666}}</view>
+<view>{{info.sum(20,30)}}</view>
+<wxs src="../../wxs/format.wxs" module="format"/>
+<!--保留两位小数格式转换-->
+<view>{{format.numFormat(25.66666,3)}}</view>

@@ -1,0 +1,9 @@
+function numFormat(num,count){
+  var f_count = count || 2;
+  var f_num = parseFloat(num);
+  return f_num.toFixed(f_count);
+}
+
+module.exports={
+  numFormat:numFormat
+}
