@@ -5,62 +5,59 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    titles:['衣服','裤子','鞋子']
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onBtnClick(){
+    console.log("按钮发生了点击")
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onTap(){
+    console.log("按钮发生了点击")
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  onTouchStart(){
+    console.log("开始触摸时调用")
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  onTouchMove(){
+    console.log("开始移动时调用")
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  onTouchEnd(){
+    console.log("结束触摸时调用")
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  onLongPress(){
+    console.log("长按超过350毫秒时调用")
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  onTouchends(event){
+    console.log("---------",event)
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onTouchendss(event){
+    console.log("++++++++++++",event)
+  },
+  outer(event){
+    console.log(event)
+  },
+  inner(event){
+    console.log(event)
+  },
+  onTitles(event){
+    const obj = event.currentTarget.dataset
+    console.log(obj.index,obj.item)
+  },
+  onCaptureView1(){
+    console.log('onCaptureView1')
+  },
+  onCaptureView2(){
+    console.log('onCaptureView2')
+  },
+  onCaptureView3(){
+    console.log('onCaptureView3')
+  },
+  onTapView1(){
+    console.log('onTapView1')
+  },
+  onTapView2(){
+    console.log('onTapView2')
+  },
+  onTapView3(){
+    console.log('onTapView3')
   }
+  
 })

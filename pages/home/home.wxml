@@ -1,4 +1,36 @@
-<!--pages/home/home.wxml-->
-<!--<text>pages/home/home.wxml</text>-->
-<view style="color:red; font-size:30px;" >Hello World</view>
-<button size="mini">按钮</button>
+
+<button bindtap="onBtnClick">按钮</button>
+<button bind:tap="onBtnClick">按钮</button>
+<!--组件常见事件-->
+<view bindtap="onTap"
+      bindtouchstart="onTouchStart"
+      bindtouchmove="onTouchMove"
+      bindtouchend="onTouchEnd"
+      bind:longpress="onLongPress"
+ class="view"></view>
+
+ <button bindtap="onTouchends"
+         bindtouchend="onTouchendss">事件对象</button>
+
+<view id="outer" class="outer" bindtap="outer">外层view
+  <view id="inner" class="inner" bindtap="inner">内层view</view>
+</view>
+<!--事件的传递参数-->
+<view>------------------</view>
+<view  class="block">
+  <block wx:for="{{titles}}">
+    <view class="item" 
+      bindtap="onTitles"
+      data-index="{{index}}"
+      data-item="{{item}}"
+      >
+      {{item}}
+    </view>
+  </block>
+</view>
+<!--事件捕获和事件冒泡-->
+<view class="view1" capture-bind:tap="onCaptureView1" bindtap="onTapView1">
+  <view class="view2" capture-bind:tap="onCaptureView2" catchtap="onTapView2">
+    <view class="view3" capture-bind:tap="onCaptureView3" bindtap="onTapView3"></view>
+  </view>
+</view>
